@@ -23,11 +23,11 @@ const index = () => {
 
             
         </View>
-            <View style={tw`bg-[#1e1e1e] border border-white p-4 rounded-2 mt-12 flex-row justify-center items-center w-90 self-center`}>
+            <View style={tw`bg-[#1e1e1e] border border-white p-4 rounded-2 mt-12 flex-row justify-center items-center w-80 self-center`}>
                 <Text style={tw`text-white font-bold`}>Mulai Belajar Sekarang</Text>
             </View>
 
-                    <Button text='Masuk' bgColor='bg-blue-500 mt-4 p-4 w-90 self-center' rute='/auth/login'/>
+                    <Button text='Masuk' bgColor='bg-blue-500 mt-4 p-4 w-80 self-center' rute='/auth/login'/>
             
             <Text style={tw`text-gray-400 text-center mt-4 `}>#Dari 1 Baris Pertama, Sampai 1 Project Pertama</Text>
 

@@ -52,7 +52,7 @@ const Signin = () => {
                 </View>
 
                 <View>
-                <Button text='Masuk' bgColor='bg-blue-500 mt-4 w-95 p-4 self-center' rute='/(tabs)/home'></Button>
+                <Button text='Masuk' bgColor='bg-blue-500 mt-4 w-80  p-4 self-center' rute='/(tabs)/home'></Button>
 
                 </View>
                 <View style={tw`mb-6 flex-row justify-center mt-2`}>

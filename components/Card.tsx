@@ -4,16 +4,17 @@ import tw from 'twrnc'
 
   const Card = ({title, icon}:any) => {
     return (
-      <View style={tw`flex-row bg-blue-500 rounded-xl my-2 shadow-lg w-45`}>
-        <View style={tw`w-2 bg-blue-500 rounded-l-xl`}></View>
-        <View style={tw`flex-1 bg-gray-700 flex-row rounded-r-xl rounded-l-xl items-center p-4`}>
-        <View style={tw`me-5`}>
+      <View style={tw`flex-row bg-blue-500 rounded-lg my-1.5 shadow-md w-40`}>
+        <View style={tw`w-1.5 bg-blue-500 rounded-l-lg`}></View>
+        <View style={tw`flex-1 bg-gray-700 flex-row rounded-r-lg rounded-l-lg items-center p-3`}>
+        <View style={tw`me-3`}>
             {icon}
           </View>
-          <Text style={tw`text-base font-medium text-white ml-2`}>{title}</Text>
+          <Text style={tw`text-sm font-medium text-white ml-1.5`}>{title}</Text>
           
         </View>      
-        </View>    )
+        </View>   
+        )
   }
 
 export default Card

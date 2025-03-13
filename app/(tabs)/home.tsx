@@ -75,24 +75,43 @@ const home = () => {
         
       </ScrollView>
 
-          <View style={tw`flex-row gap-4 justify-center mt-2`}>
+          <View style={tw`flex-row gap-2 justify-center mt-2`}>
             {cards.map((card, index) => (
               <Card key={index} title={card.title} icon={card.icon} />
             ))}
           </View>
-          <View style={tw`flex-row gap-4 justify-center mt-2`}>
+          <View style={tw`flex-row gap-2 justify-center mt-2`}>
             {cards2.map((card, index) => (
               <Card key={index} title={card.title} icon={card.icon} />
             ))}
           </View>
-
                   <View style={tw`mb-4`}>
                     <View style={tw`flex-row justify-between items-center mb-5 mt-8`}>
                       <View style={tw`flex-row items-center gap-2`}>
                         <Ionicons name="book-outline" size={24} color="white" />
-                        <Text style={tw`text-white text-lg font-bold`}>Modul Akademi</Text>
+                        <Text style={tw`text-white text-lg font-bold`}>Mau belajar apa ni</Text>
                       </View>
                       <Text style={tw`text-white`}>Lihat Semua</Text>
+                    </View>
+                   
+
+                    <View style={tw`gap-2 flex-row`}>
+                      <View style={tw`gap-2`}>
+                        <Card2 title="Modul Akademi" img={require('@/assets/images/foto1.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />
+                        <Card2 title="Modul Akademi" img={require('@/assets/images/ganjar.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />
+                      </View>
+                      <View style={tw`gap-2`}>
+                        <Card2 title="Modul Akademi" img={require('@/assets/images/ganjar.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />                  
+                        <Card2 title="Modul Akademi" img={require('@/assets/images/ganjar.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />               
+                      </View>
+                    </View>
+                    </View>         
+
+
+                  <View style={tw`p-2`}>
+                    <View style={tw`mb-4 flex flex-row items-center justify-between`}>
+                        <Text style={tw`text-white text-base font-bold`}>📅 Ikuti Event Live Terdekat</Text>
+                        <Text style={tw`text-white`}>Lihat Semua</Text>
                     </View>
                     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                         {[
@@ -114,20 +133,6 @@ const home = () => {
                             </View>
                         ))}
                     </ScrollView>
-                    <View style={tw`gap-4 flex-row flex-wrap`}>
-                      <Card2 title="Modul Akademi" img={require('@/assets/images/foto1.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />
-                      <Card2 title="Modul Akademi" img={require('@/assets/images/ganjar.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />
-                      <Card2 title="Modul Akademi" img={require('@/assets/images/ganjar.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />                  
-                      <Card2 title="Modul Akademi" img={require('@/assets/images/ganjar.png')} deskripsi="Belajar dari dasar sampai mahir" icon="play" />               
-                    </View>
-                  </View>         
-
-
-                  <View style={tw`p-2`}>
-                    <View style={tw`mb-4 flex flex-row items-center justify-between`}>
-                        <Text style={tw`text-white text-base font-bold`}>📅 Ikuti Event Live Terdekat</Text>
-                        <Text style={tw`text-white`}>Lihat Semua</Text>
-                    </View>
                     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                         <View style={tw`flex-row gap-4`}>
                             <Card3 img={require('@/assets/images/ganjar.png')} title="MasterClass Timothy Ronald" tgl="Hari ini, 12:00 WIB" harga="Free"></Card3>
@@ -152,7 +157,7 @@ const home = () => {
                             >
                                 <Text style={tw`text-black text-lg`}>17</Text>
                             </View>
-                            <Text style={tw`text-white text-lg`}>Program Techxperience</Text>
+                            <Text style={tw`text-white font-bold`}>Program Techxperiencee</Text>
                         </View>
                         <Text style={tw`text-white`}>Lihat Semua</Text>
                     </View>
